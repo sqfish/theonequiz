@@ -68,22 +68,24 @@ http-server
 ## IIFE
 
 1. In the file named `IIFE.js`. Write an IIFE that defines a global variable named **FruitMaker**. It should contain a private array holding the following strings: "apples", "bananas", "cherries", "huckleberries".
-1. The IIFE should expose in its public interface a getter named `getFruits()` that returns all fruits, and a setter named `addFruit()` that provides the ability to add a new fruit to the array.
-1. In the file named `AugmentedIIFE.js`, augment **FruitMaker** with a function named `slices()` that accepts two arguments: the name of the fruit, and the number of slices to make. It should return an array containing the name of the fruit duplicated how ever many slices was requested.
+2. The IIFE should expose in its public interface a getter named `getFruits()` that returns all fruits, and a setter named `addFruit()` that provides the ability to add a new fruit to the array.
+3. In the file named `AugmentedIIFE.js`, augment **FruitMaker** with a function named `slices()` that accepts two arguments: the name of the fruit, and the number of slices to make. It should return an array containing the name of the fruit duplicated how ever many slices was requested.
 
   For example: `slices("apples", 2)` should return `["apples", "apples"]`
 
 ## XHR
 
 1. Write a function named `getAnimals` that uses the jQuery `ajax` method to retrieve the `data/animals.json` file. When you execute the functions, it should just log *just the array* of animals to the console when the async is complete. Make sure you provide a prompt of "animals" when logging the array.
-1. What are the four HTTP verbs that you can use in an XHR that correspond to the CRUD actions (create, read, update, delete)?
+2. What are the four HTTP verbs that you can use in an XHR that correspond to the CRUD actions (create, read, update, delete)?
   **Student answer:**
   The four HTTP verbs are GET, POST, PUT and DELETE.
-1. Why did we use Promises when dealing with asynchronous XHR calls?
+
+3. Why did we use Promises when dealing with asynchronous XHR calls?
   **Student answer:**
   Asynchronous XHR calls allows the browser to continue functioning as normal while the request is being handled. If a callback function was provided along with the XHR call, when the request completes (or the server sends a status update), the appropriate callback function can be executed. However, more complex requests and callbacks can quickly become very complicated (e.g. Pyramid of Doom). In order to simplify more complex requests (i.e. dependent XHR calls), promises can be used to handle success and failure events by creating a deferred object to handle asynchronous actions.
 
 1. Provide a simple example of the syntax for handling a Promise.
+
   **Student answer:**
   ```
   // Create promise
@@ -112,7 +114,7 @@ http-server
 
 What gets logged to the console when the following code executes? Explain why.
 
-**Student answer: **
+**Student answer:**
   The number 42 is logged to the console because this refers to the object that owns the function, which in this case is the window object. In the global scope the value of answer is 42.
 
 ```
