@@ -76,11 +76,14 @@ http-server
 ## XHR
 
 1. Write a function named `getAnimals` that uses the jQuery `ajax` method to retrieve the `data/animals.json` file. When you execute the functions, it should just log *just the array* of animals to the console when the async is complete. Make sure you provide a prompt of "animals" when logging the array.
+
 2. What are the four HTTP verbs that you can use in an XHR that correspond to the CRUD actions (create, read, update, delete)?
+
   **Student answer:**
   The four HTTP verbs are GET, POST, PUT and DELETE.
 
 3. Why did we use Promises when dealing with asynchronous XHR calls?
+
   **Student answer:**
   Asynchronous XHR calls allows the browser to continue functioning as normal while the request is being handled. If a callback function was provided along with the XHR call, when the request completes (or the server sends a status update), the appropriate callback function can be executed. However, more complex requests and callbacks can quickly become very complicated (e.g. Pyramid of Doom). In order to simplify more complex requests (i.e. dependent XHR calls), promises can be used to handle success and failure events by creating a deferred object to handle asynchronous actions.
 
