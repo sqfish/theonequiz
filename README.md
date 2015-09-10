@@ -28,12 +28,12 @@ http-server
 ## JavaScript concepts
 1. Explain what hoisting is. Provide your answer below.
 
-  **Student answer: **
+  **Student answer:**
   Hoisting is a behavior in Javascript where variable and function declarations are brought to the top of their current scope, allowing them to be used prior to their declaration.
 
 2. What is a callback? Why do we use them in JavaScript? Provide your answer, and code a simple example below.
 
-  **Student answer: **
+  **Student answer:**
   A callback is a function that is passed to another function as an argument, allowing it to be excecuted at another point in time inside the intial function.
 
   Example:
